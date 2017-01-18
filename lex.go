@@ -34,6 +34,7 @@ func (l *Lexer) Lex(lval *yySymType) int {
 	s := l.TokenText()
 	if token == scanner.String {
 		token = STRING
+		s = s[1 : len(s)-1] // trim double quotes
 	}
 	if token == scanner.Int {
 		token = NUMBER
