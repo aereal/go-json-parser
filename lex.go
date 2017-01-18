@@ -10,6 +10,8 @@ import (
 var symbolTables = map[string]int{
 	"{":     LBR,
 	"}":     RBR,
+	"[":     LBK,
+	"]":     RBK,
 	"true":  TRUE,
 	"false": FALSE,
 	"null":  NULL,
